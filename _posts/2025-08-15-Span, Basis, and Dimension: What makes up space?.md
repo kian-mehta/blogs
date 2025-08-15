@@ -1,0 +1,63 @@
+---
+title: "Span, Basis, and Dimension: What makes up space?"
+date: 2025-08-15
+---
+# Span, Basis, and Dimension: What makes up space?
+
+
+
+Say you are everyone's favourite moustached plumber in red overalls in 1995. For one more year, you will be stuck moving left and right, up and down. Quite honestly, you don't miss moving forwards and backwards - it's simply unfathomable to you. But how would you model your motion. Is there a standardized way to do it? 
+
+You are probably familiar with the Cartesian co-ordinate system in 2 dimensions. Each point can be characterized by $(x, y)$, and what this means is you need two mutually independent pieces of information to locate anything in this space. 
+
+Say our plumber has two movement directions, denoted by vectors $\vec{v}_1$ and $\vec{v}_2$. 
+
+<img title="" src="blog1_1.png" style="zoom:200%;" data-align="center">
+
+In this system, vectors $\vec v_1$ and $\vec v_2$ are perpendicular to each other, $P = 4\vec v_1 + 3 \vec v_2$ and $Q = -2\vec v_1 + \vec v_2$. Basically, every point $N$ can be expressed by a scaled combination of these two vectors, $N=x\vec v_1 +y\vec v_2$. 
+
+So, now what is the "span" of Mario's motion? To answer that, let's ask ourselves, *"Which vectors can be used to express Mario's every single possible position?* Well, here, the answer would simply be $\{\vec v_1, \vec v_2\}$.
+
+These two vectors, $\vec{v}_1$ and $\vec{v}_2$, are called **basis vectors**. Basis vectors are those that make up the minimal spanning set of a space.
+
+$`\vec v_2=\begin{bmatrix} 1 \\ 0 \end{bmatrix},\ \vec v_2=\begin{bmatrix} 0 \\ 1 \end{bmatrix}`$
+
+Why these? Think of them as the simplest, most efficient instructions for moving around:
+
+* $\vec{v}_1 = [1, 0]$ means "take one step to the right, and zero steps up."
+
+* $\vec{v}_2 = [0, 1]$ means "take one step up, and zero steps to the right."
+
+Now, let's express the motion of a Goomba in the same way. Logically, the Goomba also moves in a 2D plane, so its motion can also be expressed as the span of the same two vectors right? Well, yes. But remember, Goombas don't jump. So their y-coordinate is always the same (zero). Basically, every position of the creature $N = x\vec v_1 + 0\vec v_2 = x\vec v_1$. 
+
+So does that mean that the span is both $\{\vec v_1, \vec v_2\}$ as well as $\{\vec v_1\}$? Yes! You see, here $\vec v_2$ is what is called **redundant**. It is simply not needed to express the span. 
+
+Above, we defined basis vectors as those that make up the minimal spanning set of a space. This means that we only include what is absolutely necessary. So, for the basis of the Goomba's motion, we only capture $\{\vec v_1\}$.
+
+Let's consider another example of redundancy before discussing dimensions. 
+
+<img title="" src="blog1_2.png" alt="c86c09c0-7460-4559-ba57-b106a2695c14" style="zoom:200%;" data-align="center">
+
+Here, we have defined three vectors, 
+
+$`\vec v_3=\begin{bmatrix} 2 \\ 1 \end{bmatrix},\ \vec v_2=\begin{bmatrix} 0 \\ 1 \end{bmatrix},\ \vec v_3=\begin{bmatrix} 2 \\ 1 \end{bmatrix}`$
+
+As such, $P=2\vec v_1+2\vec v_2+\vec v_3$
+
+Now, given what we have discussed earlier, we can say that P is in the span of $\{\vec v_1, \vec v_2, \vec v_3\}$. But is this the *minimally spanning set* of this space? Well, no. 
+
+You see, we can easily express $\vec v_3$ in terms of $\vec v_1$ and $\vec v_2$ as $\vec v_3=2\vec v_1 +\vec v_2$.
+
+$`2\begin{bmatrix} 1 \\ 0 \end{bmatrix}+\begin{bmatrix} 0 \\ 1 \end{bmatrix}=\begin{bmatrix} 2 \\ 1 \end{bmatrix}`$
+
+We say that $\vec v_3$ is **linearly dependent**[^1] on $\vec v_1$ and $\vec v_2$. As such, it is redundant.
+
+So, the basis for the position of a point P is the span $\{\vec v_1, \vec v_2\}$.
+
+If you have understood what basis vectors are, and have graduated nursery school, I have good news. You know what dimensions are! The dimension of a space is simply the sum of the number of vectors that span the basis of that space. Since the dimension if fixed for a space, The number of elements in the basis of the space are also fixed. Bases for a space may differ, no doubt[^2], but the dimension will not.
+
+
+
+[^1]: In a nutshell, linear dependence here means that $\vec v_3$ can be expressed using  $\vec v_1$ and $\vec v_2$ by performing only addition and scalar multiplication with a real number to them.
+
+[^2]: For example, the basis for the position of a point P can also be the span of $\{\vec v_1, \vec v_3\}$, but the number of elements in the bases will always be the same.
