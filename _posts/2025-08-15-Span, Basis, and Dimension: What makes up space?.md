@@ -4,9 +4,8 @@ date: 2025-08-15
 layout: default
 ---
 # Span, Basis, and Dimension: What makes up space?
-HELLOEOOD
 
-<script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript"></script>
+dububduudid
 
 Say you are everyone's favourite moustached plumber in red overalls in 1995. For one more year, you will be stuck moving left and right, up and down. Quite honestly, you don't miss moving forwards and backwards - it's simply unfathomable to you. But how would you model your motion. Is there a standardized way to do it? 
 
