@@ -1,6 +1,7 @@
 ---
 title: "Span, Basis, and Dimension: What makes up space?"
 date: 2025-08-15
+layout: default
 ---
 # Span, Basis, and Dimension: What makes up space?
 HELLOEOOD
