@@ -20,13 +20,13 @@ So, now what is the "span" of Mario's motion? To answer that, let's ask ourselve
 
 These two vectors, $\vec{v}_1$ and $\vec{v}_2$, are called **basis vectors**. Basis vectors are those that make up the minimal spanning set of a space.
 
-$`\vec v_2=\begin{bmatrix} 1 \\ 0 \end{bmatrix},\ \vec v_2=\begin{bmatrix} 0 \\ 1 \end{bmatrix}`$
+\\(\vec v_2=\begin{bmatrix} 1 \\ 0 \end{bmatrix},\ \vec v_2=\begin{bmatrix} 0 \\ 1 \end{bmatrix})\\
 
 Why these? Think of them as the simplest, most efficient instructions for moving around:
 
-* $\vec{v}_1 = [1, 0]$ means "take one step to the right, and zero steps up."
+* \\(\vec{v}_1 = [1, 0])\\ means "take one step to the right, and zero steps up."
 
-* $\vec{v}_2 = [0, 1]$ means "take one step up, and zero steps to the right."
+* \\(\vec{v}_2 = [0, 1])\\ means "take one step up, and zero steps to the right."
 
 Now, let's express the motion of a Goomba in the same way. Logically, the Goomba also moves in a 2D plane, so its motion can also be expressed as the span of the same two vectors right? Well, yes. But remember, Goombas don't jump. So their y-coordinate is always the same (zero). Basically, every position of the creature $N = x\vec v_1 + 0\vec v_2 = x\vec v_1$. 
 
