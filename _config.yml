@@ -3,4 +3,4 @@ title: Math Blogs by Kian
 author: Kian Mehta
 markdown: kramdown
 kramdown:
-  math_engine: mathjax
+    math_engine: katex
