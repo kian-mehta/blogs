@@ -4,7 +4,7 @@ date: 2025-08-15
 ---
 # Span, Basis, and Dimension: What makes up space?
 
-LALALLA
+NEW
 
 Say you are everyone's favourite moustached plumber in red overalls in 1995. For one more year, you will be stuck moving left and right, up and down. Quite honestly, you don't miss moving forwards and backwards - it's simply unfathomable to you. But how would you model your motion. Is there a standardized way to do it? 
 
@@ -14,11 +14,11 @@ Say our plumber has two movement directions, denoted by vectors $\vec{v}_1$ and 
 
 <img title="" src="blog1_1.png" style="zoom:200%;" data-align="center">
 
-In this system, vectors $\vec v_1$ and $\vec v_2$ are perpendicular to each other, $P = 4\vec v_1 + 3 \vec v_2$ and $Q = -2\vec v_1 + \vec v_2$. Basically, every point $N$ can be expressed by a scaled combination of these two vectors, $N=x\vec v_1 +y\vec v_2$. 
+In this system, vectors $$\vec v_1$ and $\vec v_2$$ are perpendicular to each other, $$P = 4\vec v_1 + 3 \vec v_2$ and $Q = -2\vec v_1 + \vec v_2$$. Basically, every point $$N$$ can be expressed by a scaled combination of these two vectors, $$N=x\vec v_1 +y\vec v_2$$. 
 
 So, now what is the "span" of Mario's motion? To answer that, let's ask ourselves, *"Which vectors can be used to express Mario's every single possible position?* Well, here, the answer would simply be $\{\vec v_1, \vec v_2\}$.
 
-These two vectors, $\vec{v}_1$ and $\vec{v}_2$, are called **basis vectors**. Basis vectors are those that make up the minimal spanning set of a space.
+These two vectors, $$\vec{v}_1$ and $\vec{v}_2$$, are called **basis vectors**. Basis vectors are those that make up the minimal spanning set of a space.
 
 \\(\vec v_2=\begin{bmatrix} 1 \\ 0 \end{bmatrix},\ \vec v_2=\begin{bmatrix} 0 \\ 1 \end{bmatrix})\\
 
